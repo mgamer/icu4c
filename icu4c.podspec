@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'icu4c'
-  s.version      = '51.2-m2'
+  s.version      = '51.2-m3'
   s.summary      = 'International Components for Unicode.'
   s.homepage     = 'http://icu-project.org/'
   s.license      = { :type => 'BSD', :file => 'license.html' }
   s.author       = 'IBM'
-  s.source = { :git => 'https://github.com/mgamer/icu4c.git', :tag => '51.2-m2' }
+  s.source = { :git => 'https://github.com/mgamer/icu4c.git', :tag => '51.2-m3' }
   s.source_files = 'source/common/**/*.{c,h,cpp}', 'source/i18n/**/*.{c,h,cpp}', 'source/io/**/*.{c,h,cpp}',
        'source/layout/**/*.{c,h,cpp}', 'source/layoutex/**/*.{c,h,cpp}', 'source/config.h',
        'source/stubdata/**/*.{c,h,cpp}',

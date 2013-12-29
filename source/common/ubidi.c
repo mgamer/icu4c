@@ -1197,12 +1197,12 @@ addPoint(UBiDi *pBiDi, int32_t pos, int32_t flag)
   */
 {
 #define FIRSTALLOC  10
-    Point point;
+    Point2 point;
     InsertPoints * pInsertPoints=&(pBiDi->insertPoints);
 
     if (pInsertPoints->capacity == 0)
     {
-        pInsertPoints->points=uprv_malloc(sizeof(Point)*FIRSTALLOC);
+        pInsertPoints->points=uprv_malloc(sizeof(Point2)*FIRSTALLOC);
         if (pInsertPoints->points == NULL)
         {
             pInsertPoints->errorCode=U_MEMORY_ALLOCATION_ERROR;
@@ -1214,7 +1214,7 @@ addPoint(UBiDi *pBiDi, int32_t pos, int32_t flag)
     {
         void * savePoints=pInsertPoints->points;
         pInsertPoints->points=uprv_realloc(pInsertPoints->points,
-                                           pInsertPoints->capacity*2*sizeof(Point));
+                                           pInsertPoints->capacity*2*sizeof(Point2));
         if (pInsertPoints->points == NULL)
         {
             pInsertPoints->points=savePoints;
