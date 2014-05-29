@@ -1,6 +1,6 @@
 {
   "name": "icu4c",
-  "version": "51.2-m3",
+  "version": "51.2-m4",
   "summary": "International Components for Unicode.",
   "homepage": "http://icu-project.org/",
   "license": {
@@ -10,7 +10,7 @@
   "authors": "IBM",
   "source": {
     "git": "https://github.com/mgamer/icu4c.git", 
-    "tag": "51.2-m3" 
+    "tag": "51.2-m4" 
   },
   "source_files": [
     "source/common/**/*.{c,h,cpp}",
